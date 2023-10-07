@@ -506,6 +506,10 @@ footer .logo-color{
     padding: 8px 16px;
     outline: none;
     color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-input-email::placeholder{
@@ -640,7 +644,7 @@ footer .logo-color{
 }
 
 .modal-form-field{
-    margin-bottom: 8px;
+    margin-bottom: 16px
 }
 
 .modal-form-field label{
@@ -688,7 +692,11 @@ footer .logo-color{
     border: 1px solid rgba(46, 47, 66, 0.40);
     background-color: transparent;
     outline: transparent;
-    transition: border-color 300ms linear;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-textarea::placeholder{
 
@@ -750,11 +758,11 @@ footer .logo-color{
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    display: flex;
     border-radius: 2px;
     align-items: center;
     justify-content: center;
     fill: transparent;
+    display: inline-flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
