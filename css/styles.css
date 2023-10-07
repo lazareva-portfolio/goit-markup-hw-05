@@ -485,6 +485,7 @@ footer .logo-color{
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .form-subscribe {
@@ -502,7 +503,6 @@ footer .logo-color{
     width: 264px;
     height: 40px;
     padding: 8px 16px;
-    margin-top: 16px;
     outline: none;
     color: #ffffff;
 }
@@ -561,7 +561,7 @@ footer .logo-color{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 300ms linear, visibility 300ms linear, pointer-events 300ms linear,;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open{
@@ -571,7 +571,7 @@ footer .logo-color{
 }
 
 .modal-feedback{
-    padding: 24px;
+    padding: 72px 24px 24px 24px; 
     min-width: 408px;
     min-height: 584px;
     position: absolute;
@@ -580,6 +580,8 @@ footer .logo-color{
     transform: translate(-50%, -50%);
     border-radius: 4px;
     background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title{
@@ -589,28 +591,36 @@ footer .logo-color{
     font-weight: 500;
     letter-spacing: 0.02em;
     margin: 24px auto 16px;
+    line-height: 1.5;
 }
 
 .btn-modal-close{
     box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 24px;
     width: 24px;
     border-radius: 50%;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.10);
-    position: relative;
-    top: 0;
-    left: calc(100% - 24px);
+    position: absolute;
+    top: 24px;
+    right: 24px;
     padding: 0;
-    transition: background-color 300ms linear, border 300ms linear;;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal-close:active{
+.btn-modal-close:active,
+.btn-modal-close:hover{
     border: none;
     background-color: #404BBF;
 }
 
-.btn-modal-close:active > .icon-close{
+.btn-modal-close:active > .icon-close,
+.btn-modal-close:hover > .icon-close,
+.btn-modal-close:focus > .icon-close{
     fill: #FFFFFF;
 }
 
@@ -621,7 +631,7 @@ footer .logo-color{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: fill 300ms linear;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-field{
@@ -638,6 +648,7 @@ footer .logo-color{
     line-height: 1.16; 
     letter-spacing: 0.04em;
     display: block;
+    line-height: 1.17;
 }
 
 .modal-input{
