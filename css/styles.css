@@ -784,6 +784,8 @@ footer .logo-color{
 .modal-policy-checkbox:checked + .modal-label > .fake-checkbox > .cb-icon-checked{
     fill: #F4F4FD;
 }
-
+.label-policy{
+    display: flex;
+}
 
 
